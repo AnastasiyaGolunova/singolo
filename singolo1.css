@@ -20,6 +20,9 @@
 }
 body{
     width: 1020px;
+    display: block;
+    margin-left : auto;
+    margin-right : auto;
 }
 .header{
     background-color: #2d303a;
@@ -42,7 +45,7 @@ body{
 }
 .header__nav{
     float: right;
-    padding: 40px 40px 37px 0;
+    padding: 38px 40px 37px 0;
 }
 .header__nav-list{
     text-decoration: none;
@@ -77,15 +80,15 @@ body{
 .slider{
     background-color: #f06c64;
     display: flex;
-
+    border-bottom: 6px solid #ff6666;
 }
 .slider__arrow-left,
 .slider__arrow-right{
     cursor: pointer;
-    padding: 281px 54px 283px 42px;
+    padding: 281px 54px 281px 42px;
 }
 .slider__arrow-right{
-    padding: 281px 45px 283px 80px;
+    padding: 281px 45px 281px 80px;
 }
 .slider__horizontal-phone,
 .slider__vertical-phone {
@@ -103,10 +106,7 @@ body{
 .slider__horizontal{
     padding-top: 174px;
 }
-.slider__underline{
-    height: 6px;
-    background-color: #ff6666;
-}
+
 .main{
     background-color: #f2f2f2;
 }
@@ -115,7 +115,7 @@ body{
     font-size: 30px;
     color: #666d89;
     text-align: justify;
-    padding: 60px 0 17px 41px;
+    padding: 59px 0 17px 41px;
 
 }
 .main__head-text{
@@ -123,8 +123,9 @@ body{
     font-size: 18px;
     color: #878da9;
     text-align: justify;
-    padding: 0 41px 45px 41px;
+    padding: 0 41px 46px 41px;
     line-height: 30px;
+    letter-spacing: -0.25px;
 }
 .main__services{
     padding: 0 41px;
@@ -153,13 +154,14 @@ body{
 .main__services-ideas-head,
 .main__services-answer-head{
     margin-bottom: 12px;
-    margin-left: 19px;
+    margin-left: 18px;
     font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
     font-size: 18px;
     color: rgba(102, 109, 137, 255);
     text-align: justify;
     line-height: 16px;
     font-weight: 900;
+    letter-spacing: -0.12px;
 }
 .main__services-design_text,
 .main__services-layout_text,
@@ -175,6 +177,7 @@ body{
     color: rgba(118, 126, 158, 255);
     font-weight: 400;
     word-wrap: break-word;
+    letter-spacing: -0.1px;
 }
 .main__underline{
     height:6px;
