@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: ﻿Lato-Bold;
+    src: url("./assets/fonts/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: ﻿Lato-Black;
+    src: url("./assets/fonts/Lato-Black.ttf");
+}
+@font-face {
+    font-family: ﻿Lato-Light;
+    src: url("./assets/fonts/Lato-Light.ttf");
+}
+@font-face {
+    font-family: ﻿Lato-Regular;
+    src: url("./assets/fonts/Lato-Regular.ttf");
+}
+body{
+    width: 1020px;
+}
+.header{
+    background-color: #2d303a;
+}
+.header__logo{
+    padding: 25px 0 29px 40px;
+    display: inline-block;
+}
+.header__logo-text,
+.header__logo-star{
+    font-family: ﻿Lato-Bold, AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 25px;
+    color: #ffffff;
+    display: inline;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+.header__logo-star{
+    color: #f06c64;
+}
+.header__nav{
+    float: right;
+    padding: 40px 40px 37px 0;
+}
+.header__nav-list{
+    text-decoration: none;
+    display: inline;
+}
+.header__nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: ﻿Lato-Bold, AdobeInvisFont, ﻿MyriadPro-Regular;
+    padding-left: 6px;
+    letter-spacing: normal;
+}
+.header__nav-list:after{
+    content: '·';
+    padding-left: 10px;
+    color: #404455;
+    font-family: ﻿Lato-Bold, AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12pt;
+}
+.header__nav-list:last-child:after{
+    display: none;
+}
+.header__nav-link:hover{
+    color: #f06c64;
+}
+.header__underline {
+    height: 6px;
+    background-color: #323746;
+}
+.slider{
+    background-color: #f06c64;
+    display: flex;
+
+}
+.slider__arrow-left,
+.slider__arrow-right{
+    cursor: pointer;
+    padding: 281px 54px 283px 42px;
+}
+.slider__arrow-right{
+    padding: 281px 45px 283px 80px;
+}
+.slider__horizontal-phone,
+.slider__vertical-phone {
+    float: left;
+    box-shadow:
+            25px 25px 0 #ce5d56,
+            20px 20px 0 #ce5d56,
+            15px 15px 0 #ce5d56,
+            10px 10px 0 #ce5d56;
+    border-radius: 25px;
+}
+.slider__vertical{
+    padding: 54px 98px 0 0;
+}
+.slider__horizontal{
+    padding-top: 174px;
+}
+.slider__underline{
+    height: 6px;
+    background-color: #ff6666;
+}
+.main{
+    background-color: #f2f2f2;
+}
+.main__head{
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30px;
+    color: #666d89;
+    text-align: justify;
+    padding: 60px 0 17px 41px;
+
+}
+.main__head-text{
+    font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: #878da9;
+    text-align: justify;
+    padding: 0 41px 45px 41px;
+    line-height: 30px;
+}
+.main__services{
+    padding: 0 41px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.main__services-design,
+.main__services-layout,
+.main__services-support,
+.main__services-star,
+.main__services-ideas,
+.main__services-answer{
+    display: flex;
+    align-items: flex-start;
+    width: 299px;
+    padding-bottom: 34px;
+}
+.main__services-design-head,
+.main__services-layout-head,
+.main__services-support-head,
+.main__services-star-head,
+.main__services-ideas-head,
+.main__services-answer-head{
+    margin-bottom: 12px;
+    margin-left: 19px;
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(102, 109, 137, 255);
+    text-align: justify;
+    line-height: 16px;
+    font-weight: 900;
+}
+.main__services-design_text,
+.main__services-layout_text,
+.main__services-support_text,
+.main__services-star_text,
+.main__services-ideas_text,
+.main__services-answer_text{
+    margin-left: 19px;
+    text-align: justify;
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12px;
+    line-height: 21px;
+    color: rgba(118, 126, 158, 255);
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.main__underline{
+    height:6px;
+    background-color: #ffffff;
+}
