@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1020px;
+    margin-left : auto;
+    margin-right : auto;
+}
+@font-face {
+    font-family: ﻿Lato-Bold;
+    src: url("./assets/fonts/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: ﻿Lato-Black;
+    src: url("./assets/fonts/Lato-Black.ttf");
+}
+@font-face {
+    font-family: ﻿Lato-Light;
+    src: url("./assets/fonts/Lato-Light.ttf");
+}
+@font-face {
+    font-family: ﻿Lato-Regular;
+    src: url("./assets/fonts/Lato-Regular.ttf");
+}
+.header{
+    background-color: #2d303a;
+    padding: 65px 41px;
+    border-bottom: 6px solid #323746;
+}
+.header__head{
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30px;
+    color: #666d89;
+    text-align: justify;
+    padding-bottom: 33px;
+}
+.header__text{
+    font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    padding-bottom: 18px;
+}
+ul{
+    padding-bottom: 18px;
+}
+.header__nav-list{
+    text-decoration: none;
+    display: inline;
+    padding-right: 10px;
+}
+.header__nav-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #666d89;
+    font-size: 12px;
+    font-family: ﻿Lato-Bold, AdobeInvisFont, ﻿MyriadPro-Regular;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    padding: 7px;
+}
+.header__nav-link:hover{
+    color: #dedede;
+    border-color: #dedede;
+}
+.portfolio{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.portfolio__img-link{
+    text-decoration: none;
+}
+.portfolio__img-img{
+    padding-bottom: 15px;
+}
+.portfolio__img-link:nth-child(n+13){
+    display: none;
+}
+.main{
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+}
+.main__wrapper{
+    padding: 66px 40px;
+}
+.main__head{
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30px;
+    color: #666d89;
+    text-align: justify;
+    padding-bottom: 33px;
+}
+.main__text{
+    font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: #666699;
+    text-align: justify;
+    padding-bottom: 49px;
+}
+.main__wrapper-we{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main__wrapper-we1,
+.main__wrapper-we2,
+.main__wrapper-we3{
+    width: 300px;
+}
+.main__wrapper-adam-head,
+.main__wrapper-desmond-head,
+.main__wrapper-scolara-head{
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(102, 109, 137, 255);
+    text-align: justify;
+    padding-top: 15px;
+}
+.main__wrapper-scorala-text,
+.main__wrapper-adam-text,
+.main__services-design_text{
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    padding-top: 18px;
+}
+.main__wrapper-social-list{
+    text-decoration: none;
+    display: inline;
+    padding-right: 5px;
+}
+.main__wrapper-social-link{
+    text-decoration: none;
+}
+.main__wrapper-social{
+    padding-top: 28px;
+}
