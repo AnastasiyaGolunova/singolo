@@ -25,7 +25,7 @@ body{
 }
 .header{
     background-color: #2d303a;
-    padding: 65px 41px;
+    padding: 60px 41px 50px 41px;
     border-bottom: 6px solid #323746;
 }
 .header__head{
@@ -33,22 +33,24 @@ body{
     font-size: 30px;
     color: #666d89;
     text-align: justify;
-    padding-bottom: 33px;
+    padding-bottom: 22px;
 }
 .header__text{
     font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
     font-size: 18px;
     color: rgba(118, 126, 158, 255);
     text-align: justify;
-    padding-bottom: 18px;
+    padding-bottom: 16px;
+    letter-spacing: -0.23px;
+    font-weight: 400;
 }
 ul{
-    padding-bottom: 18px;
+    padding-bottom: 20px;
 }
 .header__nav-list{
     text-decoration: none;
     display: inline;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 .header__nav-link{
     text-decoration: none;
@@ -58,7 +60,9 @@ ul{
     font-family: ﻿Lato-Bold, AdobeInvisFont, ﻿MyriadPro-Regular;
     border: 1px solid #666d89;
     border-radius: 5px;
-    padding: 7px;
+    padding: 3px 6px;
+    line-height: 20px;
+
 }
 .header__nav-link:hover{
     color: #dedede;
@@ -84,21 +88,24 @@ ul{
     border-bottom: 6px solid #ffffff;
 }
 .main__wrapper{
-    padding: 66px 40px;
+    padding: 60px 40px 42px 40px;
 }
 .main__head{
     font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
     font-size: 30px;
     color: #666d89;
     text-align: justify;
-    padding-bottom: 33px;
+    padding-bottom: 18px;
 }
 .main__text{
     font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
     font-size: 18px;
     color: #666699;
     text-align: justify;
-    padding-bottom: 49px;
+    padding-bottom: 44px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: -0.22px;
 }
 .main__wrapper-we{
     display: flex;
@@ -117,7 +124,7 @@ ul{
     font-size: 18px;
     color: rgba(102, 109, 137, 255);
     text-align: justify;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 .main__wrapper-scorala-text,
 .main__wrapper-adam-text,
@@ -126,16 +133,18 @@ ul{
     font-size: 12px;
     color: rgba(118, 126, 158, 255);
     text-align: justify;
-    padding-top: 18px;
+    padding-top: 10px;
+    line-height: 20px;
+    letter-spacing: -0.144px;
 }
 .main__wrapper-social-list{
     text-decoration: none;
     display: inline;
-    padding-right: 5px;
+    padding-right: 2px;
 }
 .main__wrapper-social-link{
     text-decoration: none;
 }
 .main__wrapper-social{
-    padding-top: 28px;
+    padding-top: 23px;
 }
