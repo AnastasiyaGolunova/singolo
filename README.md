@@ -1,2 +1,2 @@
-Solution
-https://AnastasiyaGolunova.github.io/singolo
+Solution:
+https://anastasiyagolunova.github.io/singolo/
