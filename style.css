@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: ﻿Lato-Bold;
+    src: url("./assets/fonts/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: ﻿Lato-Black;
+    src: url("./assets/fonts/Lato-Black.ttf");
+}
+@font-face {
+    font-family: ﻿Lato-Light;
+    src: url("./assets/fonts/Lato-Light.ttf");
+}
+@font-face {
+    font-family: ﻿Lato-Regular;
+    src: url("./assets/fonts/Lato-Regular.ttf");
+}
+body{
+    width: 1020px;
+    display: block;
+    margin-left : auto;
+    margin-right : auto;
+}
+.header{
+    background-color: #2d303a;
+}
+.header__logo{
+    padding: 25px 0 29px 40px;
+    display: inline-block;
+}
+.header__logo-text,
+.header__logo-star{
+    font-family: ﻿Lato-Bold, AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 25px;
+    color: #ffffff;
+    display: inline;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+.header__logo-star{
+    color: #f06c64;
+}
+.header__nav{
+    float: right;
+    padding: 38px 40px 37px 0;
+}
+.header__nav-list{
+    text-decoration: none;
+    display: inline;
+}
+.header__nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: ﻿Lato-Bold, AdobeInvisFont, ﻿MyriadPro-Regular;
+    padding-left: 6px;
+    letter-spacing: normal;
+}
+.header__nav-list:after{
+    content: '·';
+    padding-left: 10px;
+    color: #404455;
+    font-family: ﻿Lato-Bold, AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12pt;
+}
+.header__nav-list:last-child:after{
+    display: none;
+}
+.header__nav-link:hover{
+    color: #f06c64;
+}
+.header__underline {
+    height: 6px;
+    background-color: #323746;
+}
+.slider{
+    background-color: #f06c64;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 6px solid #ff6666;
+}
+.slider__arrow-left,
+.slider__arrow-right{
+    cursor: pointer;
+    padding: 281px 54px 281px 42px;
+}
+.slider__arrow-right{
+    padding: 281px 45px 281px 80px;
+}
+.slider__horizontal-phone,
+.slider__vertical-phone {
+    float: left;
+    box-shadow:
+            25px 25px 0 #ce5d56,
+            20px 20px 0 #ce5d56,
+            15px 15px 0 #ce5d56,
+            10px 10px 0 #ce5d56;
+    border-radius: 25px;
+}
+.slider__vertical{
+    padding: 54px 98px 0 0;
+}
+.slider__horizontal{
+    padding-top: 174px;
+}
+
+.main{
+    background-color: #f2f2f2;
+}
+.main__head{
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30px;
+    color: #666d89;
+    text-align: justify;
+    padding: 59px 0 17px 41px;
+
+}
+.main__head-text{
+    font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: #878da9;
+    text-align: justify;
+    padding: 0 41px 46px 41px;
+    line-height: 30px;
+    letter-spacing: -0.25px;
+}
+.main__services{
+    padding: 0 41px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.main__services-design,
+.main__services-layout,
+.main__services-support,
+.main__services-star,
+.main__services-ideas,
+.main__services-answer{
+    display: flex;
+    align-items: flex-start;
+    width: 299px;
+    padding-bottom: 34px;
+}
+.main__services-design-head,
+.main__services-layout-head,
+.main__services-support-head,
+.main__services-star-head,
+.main__services-ideas-head,
+.main__services-answer-head{
+    margin-bottom: 12px;
+    margin-left: 18px;
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(102, 109, 137, 255);
+    text-align: justify;
+    line-height: 16px;
+    font-weight: 900;
+    letter-spacing: -0.12px;
+}
+.main__services-design_text,
+.main__services-layout_text,
+.main__services-support_text,
+.main__services-star_text,
+.main__services-ideas_text,
+.main__services-answer_text{
+    margin-left: 19px;
+    text-align: justify;
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12px;
+    line-height: 21px;
+    color: rgba(118, 126, 158, 255);
+    font-weight: 400;
+    word-wrap: break-word;
+    letter-spacing: -0.1px;
+}
+.main__underline{
+    height:6px;
+    background-color: #ffffff;
+}
+
+.section{
+    background-color: #2d303a;
+    padding: 60px 41px 50px 41px;
+    border-bottom: 6px solid #323746;
+}
+.section__head{
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30px;
+    color: #666d89;
+    text-align: justify;
+    padding-bottom: 22px;
+}
+.section__text{
+    font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    padding-bottom: 16px;
+    letter-spacing: -0.23px;
+    font-weight: 400;
+}
+ul{
+    padding-bottom: 20px;
+}
+.section__nav-list{
+    text-decoration: none;
+    display: inline;
+    padding-right: 5px;
+}
+.section__nav-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #666d89;
+    font-size: 12px;
+    font-family: ﻿Lato-Bold, AdobeInvisFont, ﻿MyriadPro-Regular;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    padding: 3px 6px;
+    line-height: 20px;
+
+}
+.section__nav-link:hover{
+    color: #dedede;
+    border-color: #dedede;
+}
+.portfolio{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.portfolio__img-link{
+    text-decoration: none;
+}
+.portfolio__img-img{
+    padding-bottom: 15px;
+}
+.portfolio__img-link:nth-child(n+13){
+    display: none;
+}
+.section__about{
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+}
+.section__wrapper{
+    padding: 60px 40px 42px 40px;
+}
+.section__about-head{
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30px;
+    color: #666d89;
+    text-align: justify;
+    padding-bottom: 18px;
+}
+.section__about-text{
+    font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: #666699;
+    text-align: justify;
+    padding-bottom: 44px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: -0.22px;
+}
+.section__wrapper-we{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section__wrapper-we1,
+.section__wrapper-we2,
+.section__wrapper-we3{
+    width: 300px;
+}
+.section__wrapper-adam-head,
+.section__wrapper-desmond-head,
+.section__wrapper-scolara-head{
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(102, 109, 137, 255);
+    text-align: justify;
+    padding-top: 10px;
+}
+.section__wrapper-scorala-text,
+.section__wrapper-adam-text,
+.section__services-design_text{
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    padding-top: 10px;
+    line-height: 20px;
+    letter-spacing: -0.144px;
+}
+.section__wrapper-social-list{
+    text-decoration: none;
+    display: inline;
+    padding-right: 2px;
+}
+.section__wrapper-social-link{
+    text-decoration: none;
+}
+.section__wrapper-social{
+    padding-top: 23px;
+}
+
+.quote{
+    background-color: #f06c64;
+    padding: 60px 40px 18px 40px;
+    border-bottom: 6px solid #ea676b;
+}
+.quote__head{
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30px;
+    color: #f0d8d9;
+    text-align: justify;
+    padding-bottom: 18px;
+    letter-spacing: -0.02px;
+    font-weight: 900;
+}
+.quote__text{
+    font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: #f0d8d9;
+    text-align: justify;
+    padding-bottom: 43px;
+    letter-spacing: -0.19px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.quote__form-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form{
+    width: 619px;
+}
+input[type=text],
+input[type=email]{
+    width: 602px;
+    padding: 10px 0 10px 14px;
+    margin-bottom: 16px;
+    background-color: #d6564f;
+    border: 1px solid #d6564f;
+    border-radius: 5px;
+}
+textarea {
+    width: 602px;
+    height: 181px;
+    padding: 10px 0 10px 14px;
+    border: 1px solid #d6564f;
+    border-radius: 5px;
+    background-color: #d6564f;
+    resize: none;
+    margin-bottom: 10px;
+}
+.form__field::placeholder {
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(244, 140, 143, 255);
+    text-align: justify;
+}
+.form__button{
+    border: 1px solid #d6564f;
+    border-radius: 5px;
+    padding: 10px 14px;
+    background-color: #d6564f;
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(244, 140, 143, 255);
+    float: right;
+}
+.contact{
+    width: 303px;
+    margin: -3px;
+}
+.contact__head{
+    font-family: ﻿Lato-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color:#f0d8d9;
+    text-align: justify;
+    text-transform: capitalize;
+    padding-bottom: 8px;
+}
+.contact__text{
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(240, 216, 217, 255);
+    text-align: justify;
+    padding-bottom: 22px;
+    line-height: 22px;
+    letter-spacing: -0.12px;
+}
+.contact__location-link,
+.contact__phone-link,
+.contact__email-link{
+    text-decoration: none;
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(240, 216, 217, 255);
+    text-align: justify;
+    padding-left: 8px;
+    cursor: pointer;
+}
+.contact__phone,
+.contact__location{
+    padding-bottom: 3px;
+}
+.contact__location-link{
+    padding-left: 12px;
+}
+.footer{
+    background-color: #2d303a;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__copyright{
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12px;
+    color: #666699;
+    padding-top: 10px;
+}
+.footer__icons-facebook,
+.footer__icons-google,
+.footer__icons-linkedin,
+.footer__icons-twitter{
+    text-decoration: none;
+    padding-left: 1px;
+}
