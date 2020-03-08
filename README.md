@@ -1,2 +1,2 @@
 Solution
-https://AnastasiyaGolunova.github.io/singolo
+https://AnastasiyaGolunova.github.io/singolo/index.html
