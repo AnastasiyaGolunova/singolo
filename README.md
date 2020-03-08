@@ -1,2 +1,2 @@
-Solution
-https://github.com/AnastasiyaGolunova/singolo/blob/master/index.html
+Solution:
+https://anastasiyagolunova.github.io/singolo/
