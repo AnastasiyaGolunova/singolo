@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>singolo1</title>
+    <title>Index</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 <header class="header">
@@ -13,21 +14,21 @@
         </h1>
     </div>
     <nav class="header__nav">
-        <ul>
-            <li class="header__nav-list">
+        <ul id="menu">
+            <li class="header__nav-list active">
                 <a class="header__nav-link" href="#">home</a>
             </li>
             <li class="header__nav-list">
-                <a class="header__nav-link" href="#">services</a>
+                <a class="header__nav-link" href="#services">services</a>
             </li>
             <li class="header__nav-list">
-                <a class="header__nav-link" href="#">portfolio</a>
+                <a class="header__nav-link" href="#portfolio">portfolio</a>
             </li>
             <li class="header__nav-list">
-                <a class="header__nav-link" href="#">about</a>
+                <a class="header__nav-link" href="#about">about</a>
             </li>
             <li class="header__nav-list">
-                <a class="header__nav-link" href="#">contact</a>
+                <a class="header__nav-link" href="#contact">contact</a>
             </li>
         </ul>
     </nav>
@@ -35,25 +36,45 @@
 </header>
 
 <div class="slider">
-    <div class="slider__arrow-left">
-        <a href="#">
-            <img src="assets/chev@1X.png" alt="arrow left">
-        </a>
+    <div class="slider__wrapper wrapper" id="sliders">
+        <div class="arrows">
+            <div class="arrow-left" id="prew">
+	            <span onclick="plusSlides(-1)">
+	                <img src="assets/left.png" alt="arrow left">
+	            </span>
+            </div>
+            <div class="arrow-right" id="next">
+	            <span onclick="plusSlides(1)">
+	                <img src="assets/right.png" alt="arrow right">
+	            </span>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="iphone-vertical">
+            </div>
+            <div class="iphone-horizontal">
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="slide__blue">
+                <div class="iphone-horizontal-blue">
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="slider__vertical">
-        <img src="assets/vertical.png" class="slider__vertical-phone" alt="iPhone vertical" width="215" height="458">
-    </div>
-    <div class="slider__horizontal">
-        <img src="assets/horizontal.png" class="slider__horizontal-phone" alt="iPhone horizontal" width="458" height="215">
-    </div>
-    <div class="slider__arrow-right">
-        <a href="#">
-            <img src="assets/chev@2X.png" alt="arrow right">
-        </a>
-    </div>
+
+
 </div>
 
+
+
+
+
 <section class="main">
+    <a name="services"></a>
     <h2 class="main__head">Our Services</h2>
     <p class="main__head-text">
         Fusce dapibus, tellus ac&nbsp;cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac&nbsp;cursus commodo, tortor mauris condimentum nibh.
@@ -122,6 +143,7 @@
 </section>
 
 <section class="section">
+    <a name="portfolio"></a>
     <h1 class="section__head">
         Portfolio
     </h1>
@@ -186,6 +208,7 @@
 </section>
 
 <section class="section__about">
+    <a name="about"></a>
     <div class="section__wrapper">
         <h2 class="section__about-head">
             About Us
@@ -301,6 +324,7 @@
 </section>
 
 <section class="quote">
+    <a name="contact"></a>
     <h1 class="quote__head">
         Get a Quote
     </h1>
@@ -308,13 +332,19 @@
         Fusce dapibus, tellus ac&nbsp;cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac&nbsp;cursus commodo, tortor mauris condimentum nibh.
     </p>
     <div class="quote__form-wrap">
-        <form class="form" action="#" method="post">
-            <input class="form__field" type="text" placeholder="Name (Required)" pattern="^[a-zA-Z]+$" required>
-            <input class="form__field" type="email" placeholder="Email (Required)" required>
-            <input class="form__field" type="text" placeholder="Subject">
-            <textarea class="form__field form__textarea" type="text" placeholder="Describe your project in detail..."></textarea>
-            <button class="form__button" type="button" onclick="alert('You pressed the button!')">Submit</button>
-        </form>
+
+        <div id="prompt-form-container">
+            <form name="Form" class="form" id="prompt-form" action="#">
+                <div id="prompt-message"></div>
+                <input class="form__field" name="Name" type="text" placeholder="Name (Required)" pattern="^[a-zA-Z]+$" required>
+                <input class="form__field" name="Email" type="email" placeholder="Email (Required)" required >
+                <input class="form__field" name="Subject" type="text" placeholder="Subject">
+                <textarea class="form__field form__textarea" name="Text" type="text" placeholder="Describe your project in detail..."></textarea>
+                <button class="form__button" type="submit" onclick="Complete();">Submit</button>
+
+            </form>
+        </div>
+
         <div class="contact">
             <h2 class="contact__head">
                 Contact Information
