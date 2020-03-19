@@ -118,6 +118,7 @@ body{
     display: inline-block;
     float: right;
     margin-left: 17px;
+    opacity:0;
 }
 .iphone-horizontal-blue{
     position: absolute;
@@ -166,6 +167,21 @@ body{
             10px 10px 0 #ce5d56;
     border-radius: 25px;
     display: inline;
+
+}
+.img_hr{
+    position: absolute;
+}
+.img__base_hr{
+    position: absolute;
+    padding: 10px 0 0 56px;
+    opacity:0;
+}
+
+.img__base_vr{
+    position: absolute;
+    padding: 61px 0 0 10px;
+    opacity:0;
 }
 
 .arrow-left {
