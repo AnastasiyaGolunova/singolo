@@ -26,6 +26,10 @@ body{
 .header{
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 1020px;
 }
 .header__logo{
     padding: 25px 0 27px 40px;
@@ -71,15 +75,21 @@ body{
 .header__nav-list:last-child:after{
     display: none;
 }
-.header__nav-list.active{
+/*.header__nav-link:hover{*/
+    /*cursor: pointer;*/
+    /*color: #f06c64;*/
+/*}*/
+.header__nav-link.current{
     color: #f06c64;
-    cursor: default;
 }
-.header__nav-link:not(.active):hover{
+.header__nav-link:not(.current):hover{
     cursor: pointer;
     color: #f06c64;
 }
-
+.slider{
+    display: block;
+    margin-top: 89px;
+}
 
 .slider__wrapper {
     background: #f06c64;
@@ -89,7 +99,6 @@ body{
     width: 940px;
     height: 594px;
     padding: 0 40px;
-
 }
 
 
@@ -350,7 +359,16 @@ ul{
     line-height: 20px;
 
 }
-.section__nav-link:hover{
+/*.section__nav-link:hover{*/
+    /*color: #dedede;*/
+    /*border-color: #dedede;*/
+/*}*/
+.section__nav-link.active{
+    color: #dedede;
+    border-color: #dedede;
+}
+.section__nav-link:not(.active):hover{
+    cursor: pointer;
     color: #dedede;
     border-color: #dedede;
 }

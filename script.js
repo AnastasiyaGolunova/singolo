@@ -1,18 +1,15 @@
 "use strict";
 
-// const nav = document.getElementsByClassName('header__nav');
-//
-// nav.addEventListener('click', (event) => {
-//     nav.querySelectorAll('ul>li').forEach(el => el.classList.remove('active'));
-//     event.target.add('active');
-// });
-//
-// const menu = document.querySelector("nav ul");
-//
-// addEventListener("click", (event) => {
-//     document.querySelector("nav ul").querySelectorAll('li a').forEach(e => e.classList.remove('active'));
-//     event.target.classList.add("active");
-// });
+addEventListener("click", (event) => {
+   document.querySelectorAll('a').forEach(e => e.classList.remove('current'));
+    event.target.classList.add('current');
+});
+
+addEventListener("click", (event) => {
+    document.querySelectorAll('a').forEach(e => e.classList.remove('active'));
+    event.target.classList.add('active');
+});
+
 
 let slideIndex = 1;
 showSlides();
