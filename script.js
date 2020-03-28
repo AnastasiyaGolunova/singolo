@@ -10,6 +10,10 @@ addEventListener("click", (event) => {
     event.target.classList.add('active');
 });
 
+addEventListener("click", (event) => {
+    document.querySelectorAll('a').forEach(b => b.classList.remove('plus'));
+    event.target.classList.add('plus');
+});
 
 let slideIndex = 1;
 showSlides();
@@ -31,17 +35,6 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
 }
 
-// var i=0;
-// var imgs  = document.getElementsByClassName(".iphone-horizontal");
-// function imgsrc(){
-//     var image=document.getElementById("img");
-//     image.src=imgs[++i];
-// }
-
-// function imgsrc() {
-//     document.getElementById('img').style.opacity = '1';
-// }
-
 var flag=false;
 
 function imgsrc1(){
@@ -52,6 +45,7 @@ function imgsrc1(){
     }
     flag=!flag;
 }
+imgsrc1();
 
 function imgsrc2() {
     if (flag){
@@ -61,17 +55,28 @@ function imgsrc2() {
     }
     flag=!flag;
 }
+imgsrc2();
 
-function Complete()
-{
+
+function cl () {
+    const mixRand=(a,b)=>Math.random()-0.5;
+    const pic = document.getElementById('port');
+    addEventListener("click", (event) => {
+        pic.querySelectorAll('portfolio__img-img');
+    });
+}
+
+
+
+function Complete() {
     let Elem="Name: " + document.Form.Name.value +
         "\nE-mail: " + document.Form.Email.value +
         "\nSubject: " + document.Form.Subject.value +
         "\nText: " + document.Form.Text.value;
     alert(Elem);
 }
- function CheckValue(subject){
-   if (!document.Form.Subject.value){
-       return 'Без темы';
-   } return document.Form.Subject.value;
-}
+//  function CheckValue(subject){
+//    if (!document.Form.Subject.value){
+//        return 'Без темы';
+//    } return document.Form.Subject.value;
+// };

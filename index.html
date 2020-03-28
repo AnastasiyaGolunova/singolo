@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width:1020px), projection" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width:375px) and (max-width:767px), projection" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width:768px) and (max-width:1019px), projection" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -13,13 +17,32 @@
             <a href="#" class="header__logo-text">SINGOLO</a><p class="header__logo-star">*</p>
         </h1>
     </div>
+
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item plus" href="#">home</a></li>
+            <li><a class="menu__item" href="#">services</a></li>
+            <li><a class="menu__item" href="#">portfolio</a></li>
+            <li><a class="menu__item" href="#">about</a></li>
+            <li><a class="menu__item" href="#">contact</a></li>
+        </ul>
+    </div>
+
     <nav class="header__nav">
         <ul id="menu">
+            <span></span>
+
             <li class="header__nav-list">
                 <a class="header__nav-link current" href="#">home</a>
             </li>
             <li class="header__nav-list">
-                <a class="header__nav-link" href="#services">services</a class="header__nav-link">
+                <a class="header__nav-link" href="#services">services</a>
             </li>
             <li class="header__nav-list">
                 <a class="header__nav-link" href="#portfolio">portfolio</a>
@@ -157,57 +180,46 @@
     <nav class="section__nav">
         <ul id="portfolio__nav">
             <li class="section__nav-list">
-                <a class="section__nav-link active" href="#">all</a>
+                <a class="section__nav-link active" href="#" onclick="cl();">all</a>
             </li>
             <li class="section__nav-list">
-                <a class="section__nav-link" href="#">web design</a>
+                <a class="section__nav-link" href="#" onclick="cl();">web design</a>
             </li>
             <li class="section__nav-list">
-                <a class="section__nav-link" href="#">graphic design</a>
+                <a class="section__nav-link" href="#" onclick="cl();">graphic design</a>
             </li>
             <li class="section__nav-list">
-                <a class="section__nav-link" href="#">artwork</a>
+                <a class="section__nav-link" href="#" onclick="cl();">artwork</a>
             </li>
         </ul>
     </nav>
 
-    <div class="portfolio">
-        <a class="portfolio__img-link" href="#">
+    <div class="portfolio" id="port">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project1.png" alt="Project #1" width="220" height="186">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project2.png" alt="Project #2" width="220" height="186">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project3.png" alt="Project #3" width="220" height="186">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project4.png" alt="Project #4" width="220" height="187">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project5.png" alt="Project #5" width="220" height="187">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project6.png" alt="Project #6" width="220" height="187">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project7.png" alt="Project #7" width="220" height="187">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project8.png" alt="Project #8" width="220" height="187">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project9.png" alt="Project #9" width="220" height="187">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project10.png" alt="Project #10" width="220" height="187">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project11.png" alt="Project #11" width="220" height="187">
-        </a>
-        <a class="portfolio__img-link" href="#">
+
             <img class="portfolio__img-img" src="assets/portfolio-images/Project12.png" alt="Project #12" width="220" height="187">
-        </a>
+
     </div>
 </section>
 
@@ -291,7 +303,7 @@
             </div>
 
             <div class="section__wrapper-we3">
-                <img src="assets/employees-photo/scolara.png" class="main__wrapper-adam" height="300" width="300" alt="Scolara Visari">
+                <img src="assets/employees-photo/scolara.png" class="main__wrapper-scolara" height="300" width="300" alt="Scolara Visari">
                 <h5 class="section__wrapper-scolara-head">
                     Scolara Visari
                 </h5>
