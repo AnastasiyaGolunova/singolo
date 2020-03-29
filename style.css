@@ -584,12 +584,9 @@ textarea {
     text-decoration: none;
     padding-left: 1px;
 }
-#slider{width: 1020px;}
-.hamburger-menu,
-.menu__btn,
-#menu__toggle,
-.menu__box>li,
-.menu__item{display: none; }
+
+.hamburger-menu {display: none;}
+
 
 @media screen and (min-width: 1020px){
     body {width: 1020px;
@@ -601,11 +598,7 @@ textarea {
     section{width: 1020px;}
     footer{width: 1020px;}
     #slider{width: 1020px;}
-    .hamburger-menu,
-    .menu__btn,
-    #menu__toggle,
-    .menu__box>li,
-    .menu__item{display: none; }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1019px){
@@ -665,7 +658,7 @@ textarea {
     }
     .img__base_hr{
         width: 255px;
-        height: 147px;
+        height: 148px;
         background-size: contain;
         padding: 7px 0 0 42px;
     }
@@ -729,11 +722,7 @@ textarea {
     }
     .footer{width: 688px;}
     .main{width: 768px;}
-    .hamburger-menu,
-    .menu__btn,
-    #menu__toggle,
-    .menu__box>li,
-    .menu__item{display: none; }
+ 
 }
 @media screen and (min-width: 375px) and (max-width: 767px){
     body{width: 375px; position: relative;}
@@ -909,7 +898,7 @@ textarea {
         display: flex;
         align-items: center;
         position: absolute;
-        padding-top: 25px;
+        padding-top: 10px;
         margin-left: -230px;
         width: 25px;
         height: 20px;
@@ -947,7 +936,7 @@ textarea {
         top: 0;
         left: -50%;
         margin-top: -32px;
-        margin-left: -245px;
+        margin-left: -247px;
         width: 207px;
         height: 100%;
 
