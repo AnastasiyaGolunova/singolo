@@ -96,9 +96,9 @@ body{
     border-bottom: 6px solid #ea676b;
     overflow: hidden;
     position: relative;
-    width: 940px;
+    width: 1020px;
     height: 594px;
-    padding: 0 40px;
+
 }
 
 
@@ -115,18 +115,18 @@ body{
 
 .arrows{
     display: inline;
-    width: 940px;
+    position: relative;
 }
 .slide__blue{
     position: absolute;
-    width: 908px;
+    width: 1020px;
     height: 600px;
     background-color: #648BF0;
     transition: all 1s ease-in 0.1s;
 
     display: inline-block;
     float: right;
-    margin-left: 17px;
+
     opacity:0;
 }
 .iphone-horizontal-blue{
@@ -150,7 +150,7 @@ body{
     position: absolute;
     background: url("assets/vertical.png");
     top: 53px;
-    left: 72px;
+    left: 110px;
     width: 215px;
     height: 458px;
     box-shadow:
@@ -166,7 +166,7 @@ body{
     position: absolute;
     background: url("assets/horizontal.png");
     top: 174px;
-    left: 385px;
+    left: 424px;
     width: 458px;
     height: 215px;
     box-shadow:
@@ -196,7 +196,7 @@ body{
 .arrow-left {
     position: absolute;
 
-    left: 2px;
+
     width: 16px;
     height: 27px;
     transition: 0.6s ease;
@@ -211,7 +211,7 @@ body{
 
 
 .arrow-right {
-    position: absolute;
+    /*position: absolute;*/
     transition: 0.6s ease;
     right: 0;
     width: 16px;
@@ -584,6 +584,12 @@ textarea {
     text-decoration: none;
     padding-left: 1px;
 }
+#slider{width: 1020px;}
+.hamburger-menu,
+.menu__btn,
+#menu__toggle,
+.menu__box>li,
+.menu__item{display: none; }
 
 @media screen and (min-width: 1020px){
     body {width: 1020px;
@@ -608,7 +614,7 @@ textarea {
     section{width: 768px;}
     footer{width: 768px;}
     .slider{width: 768px;}
-    .slider__wrapper{width: 688px; height: 447px;}
+    .slider__wrapper{width: 768px; height: 447px;}
     .header__logo{
         padding: 25px 0 27px 40px;
     }
@@ -616,9 +622,10 @@ textarea {
         padding: 38px 40px 0 0;
     }
     .iphone-vertical{
+        background-size: contain;
         height: 344px;
         width: 162px;
-        left: 30px;
+        left: 80px;
         box-shadow:
                 18px 18px 0 #ce5d56,
                 13px 13px 0 #ce5d56,
@@ -628,18 +635,45 @@ textarea {
     }
 
     .iphone-horizontal{
+        background-size: contain;
         width: 344px;
         height: 162px;
-        left: 305px;
+        left: 320px;
         box-shadow:
                 18px 18px 0 #ce5d56,
                 13px 13px 0 #ce5d56,
                 8px 8px 0 #ce5d56,
                 3px 3px 0 #ce5d56;
         border-radius: 18px;
+        top: 134px;
     }
+    .slide__blue{width: 768px; height: 447px; margin: 0;}
+    .iphone-horizontal-blue{
+        background-size: contain;
+        height: 344px;
+        width: 162px;
+        box-shadow:
+                18px 18px 0 #5677CD,
+                13px 13px 0 #5677CD,
+                8px 8px 0 #5677CD,
+                3px 3px 0 #5677CD;
+        border-radius: 18px;
+        left: 270px;
+        top: 45px;}
     .arrows{
         width: 711px;
+    }
+    .img__base_hr{
+        width: 255px;
+        height: 147px;
+        background-size: contain;
+        padding: 7px 0 0 42px;
+    }
+    .img__base_vr{
+        width: 147px;
+        height: 256px;
+        background-size: contain;
+        padding: 46px 0 0 7px;
     }
     .arrow-left{
         padding-left: 29px;
@@ -736,11 +770,25 @@ textarea {
         padding-bottom: 20px;
     }
     .slider{width: 375px; height: 220px; }
-    .slider__wrapper{width: 295px; height: 220px;}
-    .iphone-vertical{
+    .slider__wrapper{width: 375px; height: 220px;}
+    .slide__blue{width: 375px; height: 220px; margin: 0;}
+    .iphone-horizontal-blue{
+        background-size: contain;
         height: 168px;
         width: 79px;
-        left: 10px;
+        box-shadow:
+                9px 9px 0 #5677CD,
+                6px 6px 0 #5677CD,
+                3px 3px 0 #5677CD,
+                1px 1px 0 #5677CD;
+        border-radius: 9px;
+        left: 150px;
+        top: 25px;}
+    .iphone-vertical{
+        background-size: contain;
+        height: 168px;
+        width: 79px;
+        left: 40px;
         top: 20px;
         box-shadow:
                 9px 9px 0 #ce5d56,
@@ -749,12 +797,18 @@ textarea {
                 1px 1px 0 #ce5d56;
         border-radius: 9px;
     }
-
+    .img__base_vr{
+        width: 72px;
+        height: 127px;
+        background-size: contain;
+        padding: 22px 0 0 4px;
+    }
     .iphone-horizontal{
+        background-size: contain;
         width: 168px;
         height: 79px;
         top: 65px;
-        left: 115px;
+        left: 155px;
         box-shadow:
                 9px 9px 0 #ce5d56,
                 6px 6px 0 #ce5d56,
@@ -762,17 +816,29 @@ textarea {
                 1px 1px 0 #ce5d56;
         border-radius: 9px;
     }
+    .img__base_hr{
+        width: 127px;
+        height: 72px;
+        background-size: contain;
+        padding: 4px 0 0 20px;
+    }
     .arrows{
         width: 355px;
     }
     .arrow-left{
         padding-left: 10px;
         padding-top: 102px;
+        width: 14px;
+        height: 24px;
+        background-size: contain;
     }
     .arrow-right{
         padding-right: 10px;
         padding-left: 40px;
         padding-top: 102px;
+        width: 14px;
+        height: 24px;
+        background-size: contain;
     }
     .main{width: 375px;}
     .section{width: 311px; padding: 26px 32px;}
@@ -810,7 +876,7 @@ textarea {
     .form__button{width: 314px; margin-bottom: 20px;}
     .footer{width: 295px;}
     .footer__copyright{display: none;}
-    .footer__icons{padding-left: 72px; padding-bottom: 15px;}
+    .footer__icons{padding-left: 72px;}
     #menu__toggle {
         opacity: 0;
     }
@@ -843,7 +909,7 @@ textarea {
         display: flex;
         align-items: center;
         position: absolute;
-        padding-top: 8px;
+        padding-top: 25px;
         margin-left: -230px;
         width: 25px;
         height: 20px;
