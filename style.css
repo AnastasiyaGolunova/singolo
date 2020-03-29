@@ -981,3 +981,259 @@ textarea {
     }
 
 }
+@media screen and (min-width: 320px) and (max-width: 374px){
+    body{width: 320px; position: relative;}
+    .header{width: 375px; height: 65px;}
+    .header__logo{padding-top: 15px;}
+    .header__logo-text{
+        padding-left: 108px;
+        font-size: 20px;
+    }
+    .header__logo-star{font-size: 20px;}
+    .header__nav,
+    #menu,
+    .header__nav-list,
+    .header__nav-link{
+        display: none;
+    }
+    .main__head{
+        padding-top: 26px;
+    }
+    .main__head-text{
+        padding-bottom: 20px;
+    }
+    .main__services{
+        padding: 0 32px;
+        margin-bottom: 8px;
+    }
+    .main__services-design,
+    .main__services-layout,
+    .main__services-support,
+    .main__services-star,
+    .main__services-ideas,
+    .main__services-answer{
+        width: 315px;
+        padding-bottom: 20px;
+    }
+    .slider{width: 375px; height: 220px; }
+    .slider__wrapper{width: 375px; height: 220px;}
+    .slide__blue{width: 375px; height: 220px; margin: 0;}
+    .iphone-horizontal-blue{
+        background-size: contain;
+        height: 168px;
+        width: 79px;
+        box-shadow:
+                9px 9px 0 #5677CD,
+                6px 6px 0 #5677CD,
+                3px 3px 0 #5677CD,
+                1px 1px 0 #5677CD;
+        border-radius: 9px;
+        left: 150px;
+        top: 25px;}
+    .iphone-vertical{
+        background-size: contain;
+        height: 168px;
+        width: 79px;
+        left: 40px;
+        top: 20px;
+        box-shadow:
+                9px 9px 0 #ce5d56,
+                6px 6px 0 #ce5d56,
+                3px 3px 0 #ce5d56,
+                1px 1px 0 #ce5d56;
+        border-radius: 9px;
+    }
+    .img__base_vr{
+        width: 72px;
+        height: 127px;
+        background-size: contain;
+        padding: 22px 0 0 4px;
+    }
+    .iphone-horizontal{
+        background-size: contain;
+        width: 168px;
+        height: 79px;
+        top: 65px;
+        left: 155px;
+        box-shadow:
+                9px 9px 0 #ce5d56,
+                6px 6px 0 #ce5d56,
+                3px 3px 0 #ce5d56,
+                1px 1px 0 #ce5d56;
+        border-radius: 9px;
+    }
+    .img__base_hr{
+        width: 127px;
+        height: 72px;
+        background-size: contain;
+        padding: 4px 0 0 20px;
+    }
+    .arrows{
+        width: 355px;
+    }
+    .arrow-left{
+        padding-left: 10px;
+        padding-top: 102px;
+        width: 14px;
+        height: 24px;
+        background-size: contain;
+    }
+    .arrow-right{
+        padding-right: 10px;
+        padding-left: 40px;
+        padding-top: 102px;
+        width: 14px;
+        height: 24px;
+        background-size: contain;
+    }
+    .main{width: 375px;}
+    .section{width: 311px; padding: 26px 32px;}
+    .portfolio__img-img{
+        width: 151px;
+        height: 128px;
+        padding-bottom: 10px;
+    }
+    .section__wrapper-we{
+        width: 314px;
+        flex-direction: column;
+    }
+    .section__about{width: 375px;}
+    .section__wrapper{padding: 26px 32px;}
+    .section__wrapper-we1,
+    .section__wrapper-we2,
+    .section__wrapper-we3{
+        width: 314px;
+    }
+    .main__wrapper-adam,
+    .main__wrapper-desmond,
+    .main__wrapper-scolara{
+        width: 314px;
+        height: 314px;
+    }
+    .quote{width: 311px; padding: 26px 32px;}
+    .quote__text{padding-bottom: 20px;}
+    .quote__form-wrap{flex-direction: column;}
+    .form{width: 314px;}
+    input[type=text],
+    input[type=email]{
+        width: 298px;}
+    textarea {
+        width: 298px;}
+    .form__button{width: 314px; margin-bottom: 20px;}
+    .footer{width: 295px;}
+    .footer__copyright{display: none;}
+    .footer__icons{padding-left: 72px;}
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        /*padding-top: 8px;*/
+
+        transform: rotate(90deg);
+
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        /*padding-top: 8px;*/
+
+        transform: rotate(180deg) translateY(2px);
+
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        /*padding-top: 8px;*/
+
+        transform: rotate(0) translateY(2px);
+
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+
+        left: 0;
+    }
+    .hamburger-menu{position: absolute; display: inline-block; z-index: 9999; }
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding-top: 10px;
+        margin-left: -230px;
+        width: 25px;
+        height: 20px;
+
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: #ffffff;
+
+        transition-duration: .25s;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        /*position: absolute;*/
+        visibility: hidden;
+        top: 0;
+        left: -50%;
+        margin-top: -32px;
+        margin-left: -247px;
+        width: 207px;
+        height: 100%;
+
+        /*margin: 0;*/
+        padding: 232px 0 320px 71px;
+
+        list-style: none;
+
+        background-color: #2d303a;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+        transition-duration: .25s;
+    }
+
+    .menu__item {
+        display: block;
+        padding-bottom: 20px;
+
+        color: #ffffff;
+
+
+        font-weight: 600;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        transition-duration: .25s;
+        font-size: 12px;
+        font-family: ﻿Lato-Bold, AdobeInvisFont, ﻿MyriadPro-Regular;
+
+
+    }
+    .menu__item:hover{
+        color: #ce5d56;
+    }
+    .menu__item.plus{
+        color: #f06c64;
+    }
+    .menu__item:not(.plus):hover{
+        cursor: pointer;
+        color: #f06c64;
+    }
+
+}
